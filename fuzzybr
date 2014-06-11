@@ -1,0 +1,7 @@
+#!/bin/bash
+
+branches=( $(git br | grep $1) )
+branch=${branches[0]}
+
+echo $branch
+
